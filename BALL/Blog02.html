@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="css/Fontawesome.css">
+<style>
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        
+section
+{
+    position: relative;
+    display: block;
+    padding: 115px 0px 115px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-color: #1700a0;
+    background-size: cover;
+}
+
+
+.container {
+    position: static;
+    max-width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+section .content {
+    position: relative;
+    padding-left: 20px;
+    border-left: 4px solid #fff;
+}
+.content h1 {
+    position: relative;
+    color: yellow;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-bottom: 15px;
+    font-size: 60px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.page-slider
+{
+    position: relative;
+    padding: 110px 0px 60px;
+}
+.box
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.page-slide .container .box .blog 
+{
+    margin-bottom: 40px;
+}
+
+.blog
+{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+@media (min-width: 992px)
+{
+.blog{
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+}
+.block
+{
+    position: relative;
+    margin-bottom: 40px;
+}
+.block .inner-box {
+    position: relative;
+    transform: translate(201px, 50px);
+}
+.block .inner-box .lower-content {
+    position: relative;
+    padding-top: 20px;
+}
+.block .inner-box .lower-content .post-meta {
+    position: relative;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.block .inner-box .lower-content .post-meta li {
+    position: relative;
+    color: #555555;
+    font-size: 12px;
+    padding: 4px 12px;
+    margin-right: 2px;
+    display: inline-block;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+}
+.block .inner-box .lower-content .post-meta li span {
+    position: relative;
+    margin-right: 6px;
+    color: #4b35cb;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.block .inner-box .lower-content h4 {
+    position: relative;
+    color: #222222;
+    font-weight: 700;
+    line-height: 1.4em;
+    margin-top: 14px;
+    font-size: 24px;
+}
+.block .inner-box .lower-content h4 a {
+    position: relative;
+    color: #222222;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    text-decoration: none;
+}
+
+.block .inner-box .lower-content .text {
+    position: relative;
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.8em;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.block .inner-box .lower-content .btn {
+    padding: 13px 36px 13px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.20);
+}
+
+button, a:hover, a:focus, a:visited {
+    text-decoration: none;
+    outline: none !important;
+}
+a
+{
+    text-decoration: none;
+}
+.btn {
+    position: relative;
+    line-height: 24px;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: #fdc71c;
+    text-transform: capitalize;
+    padding: 16px 32px 16px 32px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 0px 20px rgba(23,23,23,0.15);
+    background-image: -ms-linear-gradient(left, rgb(58, 25, 82) 0%, #fdc71c 100%);
+    background-image: -moz-linear-gradient(left, rgb(58, 25, 82) 0%, #fdc71c 100%);
+    background-image: -o-linear-gradient(left, rgb(58, 25, 82) 0%, #fdc71c 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgb(58, 25, 82)), color-stop(100, #fdc71c));
+    background-image: -webkit-linear-gradient(left, rgb(58, 25, 82) 0%, #fdc71c 100%);
+    background-image: linear-gradient(to right, rgb(58, 25, 82) 0%, #fdc71c 100%);
+    display: inline-block;
+}
+
+
+.btn:hover
+{
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #fdc71c), color-stop(100, rgb(58, 25, 82)));
+    background-image: -webkit-linear-gradient(left,  #fdc71c 0%, rgb(58, 25, 82) 100%);
+    background-image: linear-gradient(to right,  #fdc71c 0%, rgb(58, 25, 82) 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</style> 
+
+
+</head>
+<body>
+<section>
+    <div class="container">
+        <div class="content">
+            <h1>BLOG</h1>
+        </div>
+    </div>
+</section> 
+
+
+<div class="page-slider">
+    <div class="container">
+        <div class="box">
+            <div class="blog">
+                <div class="blog-list">
+
+
+                    <div class="block">
+                        <div class="inner-box">
+                            <div class="images">
+                                <img src="img/post2.jpg">
+
+                                <div class="lower-content">
+                                    <ul class="post-meta">
+                                        <li class="style-two"><span class="far fa-calendar-alt"></span>July 25, 2019</li>
+										<li><span class="fas fa-user"></span>Jhonny Rip</li>
+                                    </ul>
+                                    <h4>
+                                        <a href="#">
+                                            Thirty-two surrogate mothers charged with human trafficking.
+                                        </a>
+                                    </h4>
+
+                                    <div class="text">Cookies are set through this site to recognise your repeat visits and preferences, serve more relevant ads, facilitate social sharing, and to  violanalyse traffic.Others wondered if the hand of God was at work over New York, heralding perhaps a new Pope, or the moment when Evangelicals say true believers will be swept up, or "raptured", to heaven. </div>
+                                    <a href="#" class="btn">learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="block">
+                        <div class="inner-box">
+                            <div class="images">
+                                <img src="img/post2.jpg">
+
+                                <div class="lower-content">
+                                    <ul class="post-meta">
+                                        <li class="style-two"><span class="far fa-calendar-alt"></span>July 25, 2019</li>
+										<li><span class="fas fa-user"></span>Jhonny Rip</li>
+                                    </ul>
+                                    <h4>
+                                        <a href="#">
+                                            Thirty-two surrogate mothers charged with human trafficking.
+                                        </a>
+                                    </h4>
+
+                                    <div class="text">Cookies are set through this site to recognise your repeat visits and preferences, serve more relevant ads, facilitate social sharing, and to  violanalyse traffic.Others wondered if the hand of God was at work over New York, heralding perhaps a new Pope, or the moment when Evangelicals say true believers will be swept up, or "raptured", to heaven. </div>
+                                    <a href="#" class="btn">learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="block">
+                        <div class="inner-box">
+                            <div class="images">
+                                <img src="img/post2.jpg">
+
+                                <div class="lower-content">
+                                    <ul class="post-meta">
+                                        <li class="style-two"><span class="far fa-calendar-alt"></span>July 25, 2019</li>
+										<li><span class="fas fa-user"></span>Jhonny Rip</li>
+                                    </ul>
+                                    <h4>
+                                        <a href="#">
+                                            Thirty-two surrogate mothers charged with human trafficking.
+                                        </a>
+                                    </h4>
+
+                                    <div class="text">Cookies are set through this site to recognise your repeat visits and preferences, serve more relevant ads, facilitate social sharing, and to  violanalyse traffic.Others wondered if the hand of God was at work over New York, heralding perhaps a new Pope, or the moment when Evangelicals say true believers will be swept up, or "raptured", to heaven. </div>
+                                    <a href="#" class="btn">learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="block">
+                        <div class="inner-box">
+                            <div class="images">
+                                <img src="img/post2.jpg">
+
+                                <div class="lower-content">
+                                    <ul class="post-meta">
+                                        <li class="style-two"><span class="far fa-calendar-alt"></span>July 25, 2019</li>
+										<li><span class="fas fa-user"></span>Jhonny Rip</li>
+                                    </ul>
+                                    <h4>
+                                        <a href="#">
+                                            Thirty-two surrogate mothers charged with human trafficking.
+                                        </a>
+                                    </h4>
+
+                                    <div class="text">Cookies are set through this site to recognise your repeat visits and preferences, serve more relevant ads, facilitate social sharing, and to  violanalyse traffic.Others wondered if the hand of God was at work over New York, heralding perhaps a new Pope, or the moment when Evangelicals say true believers will be swept up, or "raptured", to heaven. </div>
+                                    <a href="#" class="btn">learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="block">
+                        <div class="inner-box">
+                            <div class="images">
+                                <img src="img/post2.jpg">
+
+                                <div class="lower-content">
+                                    <ul class="post-meta">
+                                        <li class="style-two"><span class="far fa-calendar-alt"></span>July 25, 2019</li>
+										<li><span class="fas fa-user"></span>Jhonny Rip</li>
+                                    </ul>
+                                    <h4>
+                                        <a href="#">
+                                            Thirty-two surrogate mothers charged with human trafficking.
+                                        </a>
+                                    </h4>
+
+                                    <div class="text">Cookies are set through this site to recognise your repeat visits and preferences, serve more relevant ads, facilitate social sharing, and to  violanalyse traffic.Others wondered if the hand of God was at work over New York, heralding perhaps a new Pope, or the moment when Evangelicals say true believers will be swept up, or "raptured", to heaven. </div>
+                                    <a href="#" class="btn">learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="block">
+                        <div class="inner-box">
+                            <div class="images">
+                                <img src="img/post2.jpg">
+
+                                <div class="lower-content">
+                                    <ul class="post-meta">
+                                        <li class="style-two"><span class="far fa-calendar-alt"></span>July 25, 2019</li>
+										<li><span class="fas fa-user"></span>Jhonny Rip</li>
+                                    </ul>
+                                    <h4>
+                                        <a href="#">
+                                            Thirty-two surrogate mothers charged with human trafficking.
+                                        </a>
+                                    </h4>
+
+                                    <div class="text">Cookies are set through this site to recognise your repeat visits and preferences, serve more relevant ads, facilitate social sharing, and to  violanalyse traffic.Others wondered if the hand of God was at work over New York, heralding perhaps a new Pope, or the moment when Evangelicals say true believers will be swept up, or "raptured", to heaven. </div>
+                                    <a href="#" class="btn">learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                 
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
